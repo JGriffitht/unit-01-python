@@ -33,7 +33,7 @@ if From_JadenGs_FruitBasket in From_JadenGs_FruitBasket:
     print("Yes This fruit is in the basket.")
 else:
     print("No this fruit is not here in my basket.")
-
+# I took my old list put it here and then made a if and else statment.
 '''
 Exercise 4:
 Check if a year is a century year and a leap year.
@@ -58,6 +58,7 @@ else:
         print(f"Shipping to Zone E: ${cost:.2f}")
     else:
         print(" Not a Zone Invalid zone")
+# I made user input then I made a varible to make sure the weight was atleast above zero then made math problems for the places then used the "f" command to use it in the string.
 '''
 Exercise 6:
 Determine the type of a triangle based on side lengths.
