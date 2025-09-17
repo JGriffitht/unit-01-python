@@ -8,34 +8,46 @@ verysafe_password = "123i"
 safe_password = input("Type Password here:")
 
 if safe_password.upper() == verysafe_password.upper():
- print("no let you in")
+ print("Hi welcome")
 
-
+#First I made two varibles one labling the password and one for the user input then telling it if the input is correct let them in if not correct denay accsess.
 """
 TASK 2:
 Write code that checks if a user inputs an empty string
 If the string is empty, print "invalid" otherwise print "valid"
 """
-
-
+Player_name = input("Enter Username")
+if Player_name.strip() == "":
+ print("Invaild Username")
+# I made a input for user then told it if the slot is empty tell user invaild username.
 """
 TASK 3:
 
 Write a program that will replace the word "cat" with the word "dog"
 It should replace all occurances regardless of captilization 
 """
-
-
+panther = ("cat cat cat cat cat cat dog moose")
+panther = panther.lower().replace("cat", "dog")
+print(panther)
+# Frist I made a varible for the strings then wrote a replace then told to print out what was in the varible.
 """
 TASK 4:
 
 Write a program that takes a person's name and age as input and prints it
 """
-
-
+name = input("what is your name?")
+age = input("what is your age?")
+print("your name is", name)
+print("and your age is", age)
+#Frist I started by making varibles for both inputs of name and age then printing them out in strings.
 """
 TASK 5:
 
 Write a program that takes in two floats, and prints the quotient
 The result should be rounded to the nearest tenth (1 decimal place)
 """
+Numero_uno = float(input("Enter Number Here:"))
+Numero_dos = float(input("Enter Number Here:"))
+summ = round(Numero_uno/Numero_dos, 1)
+print("Rounded:",summ)
+#I Frist made to varibles for my inputs then I made one for the math to take place in.
