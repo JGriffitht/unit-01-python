@@ -1,5 +1,5 @@
-enter_numeber1 = float(input("Input Number: "))
-enter_numeber2 = float(input("Input Number: "))
+enter_numeber1 = int(input("Input Number: "))
+enter_numeber2 = int(input("Input Number: "))
 # First off made my float inputs
 print("Select Operation")
 
