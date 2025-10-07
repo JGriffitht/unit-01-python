@@ -10,7 +10,7 @@ for chars in varible:
 Exercise 2:
 Write a program to calculate the sum of elements in a list using a for loop.
 """
-ioio = [25, 30, 50, 75, 90]
+ioio = [25, 30, 50, 75,]
 squi = 0
 for ff in ioio:
     squi += ff
@@ -20,10 +20,12 @@ for ff in ioio:
 Exercise 3:
 Write a program to print the length of each word in a sentence using a for loop and a list.
 """
-words = ["This","Has","No","numbers"]
-for rr in words:
-    print(len(rr))
-# I frist created my list of words then wrote out my loop function 
+words = "this is for you dohedro"
+ren = words.split() 
+for rr in ren:
+    print(f"{rr}: {len(rr)}")
+
+# I frist created my sentence then I used the split function to turn into a function then wrote a for loop for the words in the sentence.
 """
 Excercise 4:
 Write a program that creates a dictionary (atleast 4 key:value pairs) and then
