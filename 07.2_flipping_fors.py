@@ -30,7 +30,17 @@ for rr in ren:
 Excercise 4:
 Write a program that creates a dictionary (atleast 4 key:value pairs) and then
 iterates through a dictionary and prints the result
-
+"""
+info = {
+    "name": "username",
+    "how are you": "good",
+    "gamer?": "yes",
+    "do you lift": "no"
+}
+for ui in info:
+    print(ui,":",info[ui])
+"""
 In a comment, answer the following, what do you notice about the output of your code?
 Is it what you expected?
 """
+# what i noticed is that it goes through each code invidiually.
