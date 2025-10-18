@@ -5,7 +5,7 @@ Write a Python program that prints the current date and time using the datetime 
 """
 today = datetime.datetime.today()
 print("Today's Date")
-print()
+print
 print(today)
 #labled both my varible and the function.
 """
@@ -17,7 +17,7 @@ todaytwo = datetime.datetime.today()
 date = todaytwo.strftime("%m/%d/%Y")
 print("-------------------")
 print("Today's Date 2")
-print()
+print
 print(date)
 # i used "strftime" to format how i want the date printed
 """
@@ -25,9 +25,27 @@ Exercise 3:
 Using the strptime function, convert two strings into dates.
 Then find the difference in days between the two.
 """
+date1 = "2025/25/11"
+date2 = "2025/26/12"
 
+date1 = datetime.striptime(date1, "%Y-%m-%d")
+date2 = datetime.striptime(date2, "%Y-%m-%d")
+
+diff = date2 - date1
+
+# I used .strtiptime to convert it into a str the subtracted them.
 """
 Excercise 4:
 Write a program that asks the user for their birthdate and calculates their current 
 age using the datetime module.
 """
+birth = input("Enter birthday here")
+
+birthday = datetime.striptime(birth, "%m-%d-%y").date()
+
+todoy = date.today(
+)
+
+age = todoy.year - birthday.year - ((todoy.month, todoy.day) < birthday.month, birthday.day)
+
+# Use Striptime to convert to string then taking the year and the birthday and today year and day to find the age.

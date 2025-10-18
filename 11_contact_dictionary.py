@@ -10,29 +10,24 @@ while True:
 
     if Userchoice == "1":
         personame = input("Enter Name: ")
-        print()
-        print()
+
         theyphone = input("Enter 10-digit phone number: ")
         if theyphone.isdigit() and len(theyphone) == 10:
             contact[personame] = theyphone
             print("Contact added")
-            print()
-            print()
+
         else:
             print("Phone number must be 10 digits")
     elif Userchoice == "2":
-        print()
-        print()
+
         personame = input("Enter Name to Remove: ")
         if personame in contact:
             del contact[personame]
             print("Contact Removed")
-            print()
-            print()
+
         else:
             print("Contact not in list.")
-            print()
-            print()
+
     elif Userchoice == "3":
         if contact:
             print("Contact list.")
