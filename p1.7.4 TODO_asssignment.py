@@ -1,33 +1,30 @@
-
-todo_tracker = []
-
+todos_tracker = []
 while True:
-    print("Your TODO's are: ")
-    indent = 0
-    while indent < len(todo_tracker):
-        print(str(indent + 1)+")"+todo_tracker[indent])
-        indent = indent + 1
-        print("Update List")
-        print()
-        print("Add")
-        print()
-        print("Remove")
-        print()
-        print("(Quit) -To Stop-")
-        print()
-        print()
-        what_the_user_wants = input("What do you want to do: ").strip().lower()
-# Made a while statment to keep reprinting the list and the quesitons of wnat the user wants to do.
-        if what_the_user_wants == "add":
-            adding = input("Add to your list: ")
-            todo_tracker.append(adding)
-            print()
-            print()
-        elif what_the_user_wants == "remove":
-            removenum = int(input("Enter the number task you want to remove: "))
-            if removenum >= 1 and removenum <= len(todo_tracker):
-                removing = todo_tracker[:removenum -1]
-                removed = todo_tracker[removenum: ]
-                todo_tracker = removing + removed
-                print( )
-        
+    print("Your current todos are:")
+    if todos_tracker:
+        for z in range(len(todos_tracker)):
+            print(str(z+1) + ") " + todos_tracker[z])
+    else:
+        print("You got no todos yet")
+    print("add, remove, or quit?")
+    choice = input("Type add , remove or quit: ").lower()
+    if choice == "add":
+        new_todo = input("What is your new todo? ")
+        todos_tracker.append(new_todo)
+        print("Added:", new_todo)
+    elif choice == "remove":
+        if todos_tracker:
+            num = int(input("todo would you like to remove? "))
+            if 1 <= num <= len(todos_tracker):
+                removed = todos_tracker.pop(num-1)
+                print("Removed:", removed)
+            else:
+                print("Invalid number.")
+        else:
+            print("No todos to remove.")
+    elif choice == "quit":
+        print("You Quit:", todos_tracker)
+        break
+    else:
+        print("Invalid choice. Try again.")
+# I first started off mmaking a list for the while loop to store the varibles then next adding a user choice seleciton for add removeing or quiting then using append to add new things to the list and then using len to add it to the list showing numbers for the the user next for removing from the list I used .pop to remove it from the list through the users input then using break to end the loop.
